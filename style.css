@@ -60,6 +60,7 @@ li {
   }
 
 
+
 /* ヘッダー */
 
 #header {
@@ -89,8 +90,8 @@ li {
   justify-content:space-between;	/* 均等に配置し、スペースを作る */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
   /* width: 100%; */
-  padding: 30px 40px 25px;
-  gap: 20px;
+  padding: 30px 30px 25px;
+  gap: 15px;
   font-size: 16px;
 }
 
@@ -122,6 +123,7 @@ li {
 
 #main-contents {
   display: flex; /* フレックスボックスにする */
+  /* flex-basis: auto; /* flexアイテムの幅を自動で調整 */
   margin: 0 40px;
 }
 
@@ -140,8 +142,8 @@ li {
 }
 
 .img-1 {
-  max-width: 1200PX;
   width: 100%;
+  max-width: 1200PX;
   margin: 15px;
   object-fit: cover;
 }
@@ -163,5 +165,16 @@ li {
       font-size:12px;
       text-align:center;
       padding: 13px;
-      margin: 10px 0 12px;
+      margin: 10px 0px 12px;
+  }
+
+  /* レスポンシブ対応 */
+
+   /* 959px以下に適用されるCSS（タブレット用） */
+  @media screen and (max-width: 959px) {
+   #main-contents {
+  display: flex; /* フレックスボックスにする */
+  flex-direction: column;
+  margin: 0 40px;
+}
   }
