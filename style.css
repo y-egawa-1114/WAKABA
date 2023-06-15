@@ -27,12 +27,12 @@ li {
     color: white;
     background: #ffa726;
     border: solid 1px #ffa726;
-    border-radius:30px; /* 角丸の半径を設定、角を丸める */
+    border-radius:14px; /* 角丸の半径を設定、角を丸める */
     display: inline-block;
-    font-size: 35px;
+    font-size: 28px;
     padding: 7px 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -42,12 +42,12 @@ li {
     color: white;
     background: #4caf50;
     border: solid 1px #4caf50;
-    border-radius:30px; /* 角丸の半径を設定、角を丸める */
+    border-radius:14px; /* 角丸の半径を設定、角を丸める */
     display: inline-block;
-    font-size: 35px;
+    font-size: 28px;
     padding: 7px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
   }
 
@@ -71,9 +71,16 @@ li {
     height: 80px;
     align-items: center;
     flex: 1;
-    padding: 30px 40px 25px;
+    /* margin-right: 30px; */
+    /* padding: 30px 40px 25px; */
     background-color: #4caf50;
     color: #fff;
+    font-size: 28px;
+}
+
+#header .site-title {
+  padding: 30px 40px 25px;
+  font-weight: bold;
 }
 
 #header .list-1 {
@@ -81,7 +88,10 @@ li {
   flex-direction: row; /* フレックスアイテムを横に並べる */
   justify-content:space-between;	/* 均等に配置し、スペースを作る */
   flex-wrap: nowrap; /* 折り返し指定・一行 */
+  /* width: 100%; */
+  padding: 30px 40px 25px;
   gap: 20px;
+  font-size: 16px;
 }
 
 /* メインヴィジュアル */
@@ -112,6 +122,7 @@ li {
 
 #main-contents {
   display: flex; /* フレックスボックスにする */
+  margin: 0 40px;
 }
 
 #main-contents .title-1 {
@@ -119,17 +130,20 @@ li {
   font-family: HGPMinchoB;
   font-size: 25px;
   text-align: center;
+  font-weight: bold;
 }
 
 #main-contents .contents {
   font-size: 18px;
-  width: 50%;
-  margin-right: 50px;
+  /* width: 50%; */
+  /* margin-right: 15px; */
 }
 
 .img-1 {
-  width: 50%;
-  margin: 50px;
+  max-width: 1200PX;
+  width: 100%;
+  margin: 15px;
+  object-fit: cover;
 }
 
 /* フッター　*/
@@ -140,11 +154,14 @@ li {
   }
   
  #footer .name-1 {
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
+    padding: 13px;
  }
   
   #footer .copyright {
-      font-size:10px;
+      font-size:12px;
       text-align:center;
+      padding: 13px;
+      margin: 10px 0 12px;
   }
