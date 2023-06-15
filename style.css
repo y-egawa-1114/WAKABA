@@ -124,8 +124,9 @@ li {
 #main-contents {
   display: flex; /* フレックスボックスにする */
   /* flex-basis: auto; /* flexアイテムの幅を自動で調整 */
-  margin: 0 40px;
-  /* width: 100%; */
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
 }
 
 #main-contents .title-1 {
@@ -138,16 +139,16 @@ li {
 
 #main-contents .contents {
   font-size: 18px;
-  width: 50%;
-  margin-right: 45px;
+  /* margin-right: 45px; */
 }
 
-.img-1 {
-  width: 50%;
-  max-width: 1200PX;
-  margin: 45px;
+#main-contents .img-1 {
+  width: 100%;
+  /* max-width: 1200PX; */
+  margin: 15px;
   object-fit: cover;
 }
+
 
 /* フッター　*/
 
@@ -176,6 +177,6 @@ li {
    #main-contents {
   display: flex; /* フレックスボックスにする */
   flex-direction: column;
-  margin: 0 40px;
+  margin: 0 auto;
 }
   }
